@@ -16,8 +16,8 @@ banner_image_alt:
 
 ### 联系
 
-QQ邮箱: 844059694@qq.com
-  或者: zy.nonefly@gmail.com
+  - QQ邮箱: 844059694@qq.com
+  - 或者: zy.nonefly@gmail.com
 
 ---
 
