@@ -4,7 +4,7 @@ tagline: 随风而动－＋－随梦而行
 email: 844059694@qq.com
 description: > # this means to ignore newlines until "baseurl:"
   Nice To Meet You
-baseurl: "/nonefly"
+baseurl: ""
 url: "http://nonefly.com"
 logourl: /assets/images/logo.png # Site logo
 author: "nonefly"
