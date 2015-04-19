@@ -1,4 +1,4 @@
-- title: "关于我" # Title/Caption of the menu item
+- title: "关于" # Title/Caption of the menu item
   href: "/about" # the page where it pointed 
-- title: " 查看列表"
+- title: "列表"
   href: "/archive"
