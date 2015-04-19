@@ -21,10 +21,10 @@ theme:
     #pinterest: 
 
   # Enable share buttons on post footer
-  show_share_buttons: false
+  show_share_buttons: true
 
   # Show author picure, name and social links on post footer
-  show_author_info: false
+  show_author_info: true
 
   # Disqus comments manager - shortname
   disqus: nonefly
