@@ -63,14 +63,15 @@ layout: default
     {% endif %}  
   </div>
   
-  {% if page.comments %}
+  <!--{% if page.comments %}
     <div class="comments">
         <a href="javascript:;" class="load-view">View Comments...</a>
         <div id="disqus_thread"></div>
         <div id="g-comments"></div>
     </div>
-  {% endif %}
-  <!--{% if page.comments %}
+  {% endif %}-->
+  
+  {% if page.comments %}
     <div class="comments">
         <div id="disqus_thread" ></div>
 		<script type="text/javascript" > 
@@ -84,5 +85,5 @@ layout: default
 		</script>
         <div id="g-comments"></div>
     </div>
-  {% endif %}-->
+  {% endif %}
 </div>
