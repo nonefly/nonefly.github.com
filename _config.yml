@@ -11,7 +11,7 @@ author: "nonefly"
 author_thumbnail: "/assets/images/avatar.jpg" # Author avatar
 theme:
   # Color for sidebar bar, links, etc
-  highlight_color: "#0602FD"
+  highlight_color: "#0404B4"
   social: 
     github: nonefly
     twitter: zy_nonefly
