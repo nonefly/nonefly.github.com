@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Blog Archive
+title: 查看列表
 permalink: /archive/
 banner_image: sample-banner-image-3.jpg
 ---
