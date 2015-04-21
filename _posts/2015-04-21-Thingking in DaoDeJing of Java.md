@@ -3,7 +3,9 @@ layout: post
 title: java与《道德经》总章己悟
 date:  2015-4-21 05:35
 meta_description:  
-categories: java,道德经
+categories: 
+ - java
+ - 道德经
 comments: true
 ---
 
