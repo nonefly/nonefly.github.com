@@ -30,7 +30,7 @@ theme:
   disqus: nonefly
 
   # Google Analytics/Webmaster key, leave blank to ignore
-  google_analytics_key: UA-365520-17
+  google_analytics_key:
   google_webmaster_key: 
 
 # Build settings
