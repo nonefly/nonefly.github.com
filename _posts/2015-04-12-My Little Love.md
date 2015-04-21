@@ -3,7 +3,9 @@ layout: post
 title: 微情书
 date:  2015-4-12 20:31
 meta_description:  
-categories: Life,Thought
+categories: 
+ - Life
+ - Thought
 comments: true
 ---
 
