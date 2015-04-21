@@ -3,7 +3,10 @@ layout: post
 title: java词法分析器
 date:   2014-4-11 01:08:49
 meta_description:  
-categories: java,编译原理,词法分析
+categories: 
+ - java
+ - 编译原理
+ - 词法分析
 comments: true
 ---
 
