@@ -12,17 +12,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>
-    {% if page.title %}{{ page.title }}
-    {% else %}{{ site.title }}{% endif %}</title>
+    {% if page.title %}{{page.title }}{% else %}{{ site.title }}{% endif %}</title>
     <meta name="description" content="{% if page.meta_description %}{{ page.meta_description }}{% else %}{{ site.description }}{% endif %}">
     {% include open-graph.html %}
-  
-    {% comment %}
-    The meta tag below is useful when you want to verify the website to 
-    Google web-master tools in an alternative way. Simply configure your site verification key on
-    _config.yml given by Google web-master tools.
-    {% endcomment %}
-
     {% if site.theme.google_webmaster_key %}
     <meta name="google-site-verification" content="{{ site.theme.google_webmaster_key }}" />
     {% endif %}
