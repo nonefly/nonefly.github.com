@@ -9,7 +9,8 @@ categories:
 comments: true
 ---
 
-## 引言
+
+### 引言
 
 ```java
 public static void main(String[] args) {
@@ -30,7 +31,7 @@ public static void main(String[] args) {
   - 再换为随意创建的对象呢？
   - 再把`==`换为`equals()`呢？
 
-## 分析
+### 分析
 也许上面代码直接copy到Eclipse下瞬间便知答案，但是为什么？
 
 首先定义了两组变量（str1，str2与str3，str4），方式一模一样，然后用`==`计算互相之间差异。    
@@ -59,7 +60,7 @@ String str4 = "hello";
  String str5 = "hello";//为什么？
 ```
 
-## 思考
+### 思考
 
 如果输出用`equals()`而不用`==`呢？
 运行程序，或者直接得出:所有的`str`都相等。那么么么。。。为什么O(∩_∩)O~？
