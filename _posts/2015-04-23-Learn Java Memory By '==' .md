@@ -23,7 +23,7 @@ comments: true
 		System.out.println(str2 == str3);
 		System.out.println(str3 == str4);
 		String str5;// (str5 = str?)可以用==输出true?
-}
+	}
 ```
 
 先来一段java代码，如果上面变量都是`int`之类基本类型，也许结果显然全部相等。但是:
