@@ -4,15 +4,24 @@
 <!--[if IE 8]>    <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->  
   <head>
-    <title>{% if page.title %}{{page.title }}{% else %}{{ site.title }}{% endif %}</title>
+    <title></title>
+
     <meta charset="utf-8">
     {% comment %}
     <!-- Enable responsiveness on mobile devices-->
     {% endcomment %}
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>{% if page.browser_title %}{{ page.browser_title }}{% elsif page.title %}{{ page.title | append: ' - ' | append: site.title }}{% else %}{{ site.title }}{% endif %}</title>
     <meta name="description" content="{% if page.meta_description %}{{ page.meta_description }}{% else %}{{ site.description }}{% endif %}">
     {% include open-graph.html %}
+  
+    {% comment %}
+    The meta tag below is useful when you want to verify the website to 
+    Google web-master tools in an alternative way. Simply configure your site verification key on
+    _config.yml given by Google web-master tools.
+    {% endcomment %}
+
     {% if site.theme.google_webmaster_key %}
     <meta name="google-site-verification" content="{{ site.theme.google_webmaster_key }}" />
     {% endif %}
@@ -21,8 +30,9 @@
     <link rel="shortcut icon" href="{{ "/favicon.ico" | prepend: site.baseurl | prepend: site.url }}">
     <link rel="prefetch" href="{{ site.url }}">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-    <link rel="stylesheet" href="{{ '/assets/css/main.css' | prepend: site.baseurl | prepend: site.url }}">
-</script>
+    <link rel="stylesheet" 
+    href="{{ '/assets/css/main.css' | prepend: site.baseurl | prepend: site.url }}">
+
     <!-- IE Fixes -->
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -62,7 +72,7 @@
     <script type="text/javascript">
       var config = {
         "browser_warning_page": "{{ '/browser-warning/' | prepend: site.baseurl | prepend: site.url }}",
-        "disqus_shortname": "{{ site.theme.disqus}}"
+        "disqus_shortname": "{{ site.theme.disqus_shortname }}"
       };
       /* Browser support detection */
       var browserSupport = (function(){
