@@ -11,12 +11,7 @@ comments: true
 
 ## 引言
 
-<<<<<<< HEAD
 ```java
-
-=======
-```ruby
->>>>>>> 3ca9a77d963a85f46307872fb97cdbd91ee824aa
 public static void main(String[] args) {
 	String str1 = new String("hello");
 	String str2 = "hello";
@@ -42,14 +37,8 @@ public static void main(String[] args) {
 首先定义了两组变量（str1，str2与str3，str4），方式一模一样，然后用`==`计算互相之间差异。    
 那么我们就要知道`==`在java中比较的是地址。好吧，貌似知道了也不能直接解题。似乎还必须了解它们存放地址在哪，这样才知道是否地址相等。那便一个一个分析变量存储内存（*java内存介绍便不啰嗦了，可以看[这儿][1]*）。
 
-<<<<<<< HEAD
 ```java
-
-=======
-```
->>>>>>> 3ca9a77d963a85f46307872fb97cdbd91ee824aa
 String str1 = new String("hello");
-
 ```
 
 这段代码执行时，用了`new`关键字，于是在堆中创建了String对象，保存的值便是"hello"(任何对象创建都是类似)。然后在堆栈（栈）中保存一个引用类型（str1）[*引用类型在之后说明*]。而str1存放的是"hello"这个对象在堆中的地址(*可以想象C中指针指向一个实际值，但是java中不存在指针这一说法*)。**于是每`new`一个对象，必然在堆中新分配了空间**。对于String类型这是绝对的，而且只会在堆中保存对象。但是一个类存在的静态变量，会放在静态变量区，方法体等其他仍在堆中。
