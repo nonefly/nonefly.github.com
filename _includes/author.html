@@ -7,14 +7,13 @@
       alt="{{ site.title }}" width="60" height="60" />
   </a>
   {% endif %}
-  <h5>作者</h4>
+  <h5>Author</h4>
   <h6>
     <a href="{{ '/about' | prepend: site.baseurl | prepend: site.url }}">
       {{ site.author }}
     </a>
   </h5>
   <p>
-    Find me on
     {% if site.theme.social.twitter %}
         <a title="{{ site.theme.social.twitter }} on Twitter" 
             href="https://twitter.com/{{ site.theme.social.twitter }}" 
