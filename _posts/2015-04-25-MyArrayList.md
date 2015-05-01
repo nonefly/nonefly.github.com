@@ -10,32 +10,38 @@ comments: true
 browser_title: 顺序线性表
 ---
 
-
 {% highlight java %}
-package com.nonefly.list;
-import java.util.Arrays;
-public class MyArrayList<T> implements MyList<T>{
+
+    package com.nonefly.list;
+    import java.util.Arrays;
+
+    public class MyArrayList<T> implements MyList<T>{
 	private int size = 0;
 	private int capacity;
-	private Object[] elementData;	 
+	private Object[] elementData;
+	 
 	public MyArrayList(int initialCapacity) {
         capacity = 1;
         while(capacity < initialCapacity){
         	capacity <<= 1;
         }
         this.elementData = new Object[capacity];
-    }
+        }
+
 	public MyArrayList(){
 		this(10);
 	}
+	
 	public int length(){
 		return size;
-	}	
+	}
+	
 	@SuppressWarnings("unchecked")
 	public T get(int index) {
 		checkIndex(index, size - 1);
         return (T) elementData[index];
-    }	
+        }
+	
 	public int indexOf(T element) {
         
         if(element == null){
@@ -47,8 +53,10 @@ public class MyArrayList<T> implements MyList<T>{
         		if (element.equals(elementData[i]))
         			return i;
         }
-        return -1;        
-    }
+        return -1;
+        
+        }
+	
 	public void insert (int index, T element ){
 		checkIndex(index, size);
 		ensureCapacity(size + 1);
@@ -56,9 +64,11 @@ public class MyArrayList<T> implements MyList<T>{
 		elementData[index] = element;
 		size++;
 	}
+	
 	public void add(T element) {
 		insert(size, element);
 	}
+	
 	private void ensureCapacity(int minCapacity) {
 		if(capacity < minCapacity){
 			while(capacity < minCapacity){
@@ -66,7 +76,9 @@ public class MyArrayList<T> implements MyList<T>{
 			}
 			elementData = Arrays.copyOf(elementData, capacity);
 		}
+		
 	}
+	
 	@SuppressWarnings("unchecked")
 	public T delete (int index ){
 		checkIndex(index, size - 1);
@@ -77,16 +89,20 @@ public class MyArrayList<T> implements MyList<T>{
 		elementData[--size] = null;
 		return oldValue;
 	}
+	
 	public T remove(){
 		 return delete(size - 1);
 	}
+	
 	public boolean isEmpty(){
 		return size == 0;
 	}
+	
 	public void clear(){
 		Arrays.fill(elementData, null);
 		size = 0;
 	}
+	
 	@Override
 	public String toString() {
 		if(size == 0) return "[]";
@@ -96,16 +112,10 @@ public class MyArrayList<T> implements MyList<T>{
 		int len = sb.length();
 		return sb.delete(len - 2, len).append("]").toString();
 	}
+	
 	private void checkIndex(int index, int max) {
 		if(index > max || index < 0 )
 			throw new IndexOutOfBoundsException("index"+index);
+        }
     }
-}
 {% endhighlight %}
-
-haozhea
-{% highlight java %}
-String str2 = "hello";
-{% endhighlight %}
-
-
