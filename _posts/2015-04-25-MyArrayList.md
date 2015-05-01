@@ -25,10 +25,6 @@ public class MyArrayList<T> implements MyList<T>{
         }
         this.elementData = new Object[capacity];
     }
-{% endhighlight %}
-
-
-
     public MyArrayList(){
         this(10);
     }
@@ -119,4 +115,9 @@ public class MyArrayList<T> implements MyList<T>{
             throw new IndexOutOfBoundsException("index"+index);
     }
 }
+{% endhighlight %}
+
+
+
+    
 
