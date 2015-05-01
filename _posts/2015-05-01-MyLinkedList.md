@@ -1,13 +1,13 @@
 ---
 layout: post
-title: 顺序线性表
-date:  2015-4-25
+title: 链式线性表
+date:  2015-05-01
 meta_description:  
 categories: 
  - java
  - data structure
 comments: true
-browser_title: 顺序线性表
+browser_title: 链式线性表
 ---
 
 这是线性表的链式实现（实现了一个双向链表），当然也可以用[顺序实现][1]，根据不同需求。两者区别如下:
