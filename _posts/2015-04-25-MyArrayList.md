@@ -10,6 +10,7 @@ comments: true
 browser_title: 顺序线性表
 ---
 
+
 {% highlight java %}
 package com.nonefly.list;
 import java.util.Arrays;
@@ -118,3 +119,4 @@ public class MyArrayList<T> implements MyList<T>{
     }
 }
 {% endhighlight %}
+
