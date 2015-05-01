@@ -4,7 +4,7 @@ title: 以==理解java内存
 date:  2015-4-23 16:43
 meta_description:  
 categories: 
- - javaSE
+ - java
  - 内存
 comments: true
 browser_title: 以"=="理解java内存
