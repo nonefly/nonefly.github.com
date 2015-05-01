@@ -118,6 +118,11 @@ public class MyArrayList<T> implements MyList<T>{
 			throw new IndexOutOfBoundsException("index"+index);
     }
 }
-
 {% endhighlight %}
+
+haozhea
+{% highlight java %}
+String str2 = "hello";
+{% endhighlight %}
+
 
