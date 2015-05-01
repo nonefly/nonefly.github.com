@@ -13,21 +13,6 @@ browser_title: 顺序线性表
 {% highlight java %}
 package com.nonefly.list;
 import java.util.Arrays;
-/**
- * 顺序线性表
- * @author nonefly
- * @param <T>
- * 2015/4/25
- */
-{% endhighlight %}
-package com.nonefly.list;
-import java.util.Arrays;
-/**
- * 顺序线性表
- * @author nonefly
- * @param <T>
- * 2015/4/25
- */
 public class MyArrayList<T> implements MyList<T>{
     private int size = 0;
     private int capacity;
@@ -40,6 +25,9 @@ public class MyArrayList<T> implements MyList<T>{
         }
         this.elementData = new Object[capacity];
     }
+{% endhighlight %}
+
+
 
     public MyArrayList(){
         this(10);
