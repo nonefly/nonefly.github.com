@@ -61,6 +61,6 @@ browser_title: 数据结构
 
 
   [1]: http://zh.wikipedia.org/wiki/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84
-  [2]: hhh
+  [2]: {{ site.url }}/java/data%20structure/2015/04/25/MyArrayList/
   [3]: lianshijiegou
-  [4]: http://nonefly.com/java/%E9%81%93%E5%BE%B7%E7%BB%8F/2015/04/21/Thingking%20in%20DaoDeJing%20of%20Java/
+  [4]: {{ site.url }}/java/%E9%81%93%E5%BE%B7%E7%BB%8F/2015/04/21/Thingking%20in%20DaoDeJing%20of%20Java/

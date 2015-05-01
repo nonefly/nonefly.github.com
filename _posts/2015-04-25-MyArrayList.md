@@ -10,6 +10,9 @@ comments: true
 browser_title: 顺序线性表
 ---
 
+线性表的实现可以是顺序的（数组实现），也可以是非顺序（链式）的，
+如下便是顺序表的实现，相当于简化版的java工具类中`ArrayList`。链式结构的实现（实现为一个双向链表），相当于java工具类中`LinkedList`,具体实现可以参考[这里][1]。
+
 `MyList`为自定义的一个线性表接口，说明了一些线性表应该具有的功能:
 {% highlight java %}
 package com.nonefly.list;
@@ -199,8 +202,8 @@ public class Test {
     public static void main(String[] args) {
         MyList<String> list = null;
         
-        //list = new MyArrayList<String>();
-        list = new MyLinkList<String>();
+        list = new MyArrayList<String>();//顺序表测试
+        //list = new MyLinkList<String>();//链表测试
 
         //增
         list.add("hello");
@@ -216,15 +219,14 @@ public class Test {
         //查询
         System.out.println("表长度为："+list.length());//长度
         System.out.println("null元素所在索引："+list.indexOf(null));//输出1
-        System.out.println("'world'元素所在索引："+list.indexOf("world"));//已删除，输出-1，便是错误
+        System.out.println("'world'元素所在索引："+list.indexOf("world"));//已删除，输出-1，表示错误
     }
     
 }
 {% endhighlight %}   
 
-测试结果如下：![运行结果][1]
+测试结果如下：![运行结果][2]
 
 
-  [1]: {{ site.url }}/assets/images/2015/arraylist.png
-
-
+  [1]: lianbaio
+  [2]: {{ site.url }}/assets/images/2015/arraylist.png
