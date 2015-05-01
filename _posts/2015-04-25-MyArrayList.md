@@ -10,7 +10,7 @@ comments: true
 browser_title: 顺序线性表
 ---
 
-`MyList`为自定义的一个线性表接口，说明了一些线性表应该具有的功能
+`MyList`为自定义的一个线性表接口，说明了一些线性表应该具有的功能:
 {% highlight java %}
 package com.nonefly.list;
 /**
@@ -19,7 +19,7 @@ package com.nonefly.list;
  */
 public interface MyList<T> {
     
-    /** @return size 顺序表元素个数*/
+    /** @return size 线性表元素个数*/
     public int length();
     
     /**
@@ -76,12 +76,9 @@ public interface MyList<T> {
 }
 {% endhighlight %}
 
+下面是顺序线性表的实现（通过数组来存储表中元素），它实现了`MyList`接口中的方法，同时添加了自己的一些方法，如:为了输出方便，重写了`toString`等.
 
-
-
-
-
-
+*事实上，在这里用接口只是为了方便提醒自己不要漏掉某些重要功能，在练习表的实现中，不实现`MyList`接口也可以正确运行。*
 
 {% highlight java %}
 package com.nonefly.list;
@@ -190,7 +187,44 @@ public class MyArrayList<T> implements MyList<T>{
 }
 {% endhighlight %}
 
+ 最后，完成表的实现我们可以写一个测试方法运行验证写的是否正确。下面的是一个简单的测试，没有对所有方面验证：
 
+{% highlight java %}
+package com.nonefly.list;
+/**
+ * 线性表测试
+ * @author nonefly
+ */
+public class Test {
+    public static void main(String[] args) {
+        MyList<String> list = null;
+        
+        //list = new MyArrayList<String>();
+        list = new MyLinkList<String>();
 
+        //增
+        list.add("hello");
+        list.add("world");
+        list.add("nonefly");
+        //改
+        list.insert(2, null);//注意验证元素null存取
+        list.insert(3, "I am");
+        System.out.println(list);
+        //删
+        list.delete(1);
+        System.out.println(list);
+        //查询
+        System.out.println("表长度为："+list.length());//长度
+        System.out.println("null元素所在索引："+list.indexOf(null));//输出1
+        System.out.println("'world'元素所在索引："+list.indexOf("world"));//已删除，输出-1，便是错误
+    }
     
+}
+{% endhighlight %}   
+
+测试结果如下：![运行结果][1]
+
+
+  [1]: {{ site.url }}/assets/images/2015/arraylist.png
+
 
