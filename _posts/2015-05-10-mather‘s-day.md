@@ -21,4 +21,4 @@ comments: false
 
  ![fm.jpg][1]
 
- [1]: {{ site.url }}/assets/images/fm.png
+ [1]: {{ site.url }}/assets/images/fm.jpg
