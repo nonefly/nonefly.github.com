@@ -4,7 +4,7 @@ title:  "母亲节快乐"
 date:   2015-05-10
 categories: 
  - life
-banner_video: '<iframe height=498 width=510 src="http://player.youku.com/embed/XOTUyNTg3NzI0" frameborder=0 allowfullscreen></iframe>'
+banner_video: '<iframe height=498 width=560 src="http://player.youku.com/embed/XOTUyNTg3NzI0" frameborder=0 allowfullscreen></iframe>'
 comments: false
 ---
 
