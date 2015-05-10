@@ -18,5 +18,7 @@ comments: false
 
   - 再苦再累从未有过丝丝怪罪
   - 而从未有过的理解却是让您们一次次含着泪
-![fm.jpg][1]
+
+ ![fm.jpg][1]
+
  [1]: {{ site.url }}/assets/images/fm.png
