@@ -13,8 +13,8 @@ browser_title: java散点
  1. 三目运算符右结合
  > true?false:true == true?false:true;这个表达式等于true?false:（true == （true?false:true））; => true?false:(true == false); => true?false:false;最终应该得到false。
 
- 2. &，|，~ 为位运算符，也是Boolean类型的逻辑运算符
- > 此时与&&，|| 区别：&&或|| 做了优化，&& 前为false或者 || 前为true，则不继续运算，而& | 则做完。
+ 2. &，\|，~ 为位运算符，也是Boolean类型的逻辑运算符
+ > 此时与&&，|| 区别：&&或|| 做了优化，&& 前为false或者 \|| 前为true，则不继续运算，而& \| 则做完。
 
  3. final,finally,finalize
    - `finally` 
