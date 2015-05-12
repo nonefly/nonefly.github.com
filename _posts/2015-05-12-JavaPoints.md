@@ -14,7 +14,7 @@ browser_title: java散点
  > true?false:true == true?false:true;这个表达式等于true?false:（true == （true?false:true））; => true?false:(true == false); => true?false:false;最终应该得到false。
 
 ### 2. &，\|，~ 为位运算符，也是Boolean类型的逻辑运算符
- > 此时与&&，|| 区别：&&或|| 做了优化，&& 前为false或者 \|| 前为true，则不继续运算，而& \| 则做完。
+ > 此时与&&，\|\| 区别：&&或\|\| 做了优化，&& 前为false或者 \|\| 前为true，则不继续运算，而& \| 则做完。
 
 ### 3. final,finally,finalize
    - `finally` 
@@ -22,12 +22,12 @@ browser_title: java散点
    - `finalize`  
         方法名,Object中定义，释放资源。
    - `final`修饰符    
-    + final成员   
-     成员初始化后值不能再改变。
-    + final方法
-     方法可被继承但不可重写。编译时将主体插入而不是调用。
-    + final类
-     类不可被继承
++ final成员   
+     	 成员初始化后值不能再改变。
++ final方法    
+     	 方法可被继承但不可重写。编译时将主体插入而不是调用。
++ final类    
+ 	 类不可被继承
 
 ### 4. 传值OR传引用？
   > 都是传一个副本（拷贝），都是传值
