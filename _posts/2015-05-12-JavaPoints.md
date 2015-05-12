@@ -17,11 +17,11 @@ browser_title: java散点
  > 此时与&&，|| 区别：&&或|| 做了优化，&& 前为false或者 || 前为true，则不继续运算，而& | 则做完。
 
  3. final,finally,finalize
-  > - `finally` 
+   - `finally` 
         异常处理补充，总会执行的代码（无论是否异常），try中return时，会在return前执行 
-  > - `finalize`  
+   - `finalize`  
         方法名,Object中定义，释放资源。
-  > - `final`修饰符
+   - `final`修饰符
     + final成员   
      成员初始化后值不能再改变。
     + final方法
