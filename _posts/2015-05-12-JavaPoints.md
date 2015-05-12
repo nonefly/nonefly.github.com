@@ -35,7 +35,7 @@ browser_title: java散点
 
  > **引用类型事实上传的也是另一个一样值的引用，改变传的值也不会影响。**这句可能会不被赞同，如下代码（Pig是一个简单的包含一个name成员的类，便不列出代码)，将pig这个引用传入后，为pig重新引用一个类（名pig1），输出pig的name属性：
  
-```java
+{% highlight java %}
 public class Test {
 	public static void main(String[] args) {
 		Pig pig = new Pig("pig");
@@ -46,14 +46,16 @@ public class Test {
 		pig = new Pig("pig1"); 
 	}
 }
-```
+{% endhighlight %}
+ 
  > 那如果要改值呢？传递的pig虽是另一个pig，但是他的值（即对象堆中的地址两个一样的，因此可以通过传入的pig这个引用操作传入之前指向的对象），如下代码便可以改变name
+{% highlight java %}
+static void changeName(Pig pig){
+	pig.setName("pig1"); //main()方法则输出"pig1"
+}
+{% endhighlight %}
 
-```java
-    static void changeName(Pig pig){
-		pig.setName("pig1"); //main()方法则输出"pig1"
-	}
-```
+
  ***因此可以说都是传值，所谓传递引用，只是传递的引用的值可以被用来操作对应的对象***
 
  
