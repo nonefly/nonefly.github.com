@@ -184,7 +184,7 @@ public class MyLinkList<T> implements MyList<T> {
 	public String toString() {
 		if(size == 0) return "[]";
 		StringBuilder sb = new StringBuilder("[");
-		for(Node node = header; node.next != null ; node = node.next)
+		for(Node node = header; node != null ; node = node.next)
 			sb.append(node.data+", ");
 		int len = sb.length();
 		return sb.delete(len - 2, len).append("]").toString();
