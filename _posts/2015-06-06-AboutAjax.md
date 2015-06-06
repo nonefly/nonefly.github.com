@@ -35,11 +35,12 @@ browser_title: 理解Ajax
 
 **1. 首先，获得`XMLHttpRequest`对象**
 
-    打电话当然的有`手机`了，所以先创建`XMLHttpRequest`对象。只是注意的是为了兼容各种浏览器，`XMLHttpRequest`有所不同，老版本IE`XMLHttpRequest`叫做`ActiveX`
+打电话当然的有`手机`了，所以先创建`XMLHttpRequest`对象。只是注意的是为了兼容各种浏览器，`XMLHttpRequest`有所不同，老版本IE`XMLHttpRequest`叫做`ActiveX`
 
 **2. 发送请求**
 
-    有手机了就该问家里需要的信息了。**`open(请求方式, 请求地址, 是否异步)`**
+    有手机了就该问家里需要的信息了。 **`open(请求方式, 请求地址, 是否异步)`**
+   
     > - 请求方式:`GET`或者`POST`，手机还分发短信和打电话呢。这里也有两种方式，也就是`HTTP`协议中两种请求方式。
     > - 请求地址：手机获得消息需要手机号吗，`XMLHttpRequest`也要服务器地址了。
     > - 是否异步：`true`或`false`即发短信时候傻傻等着(false)回复呢，还是同时做后面的事(true)~
