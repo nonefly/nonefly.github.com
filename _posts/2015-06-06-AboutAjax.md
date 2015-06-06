@@ -129,7 +129,8 @@ public class DeptsServlet extends HttpServlet {
 
 `Asynchronous JavaScript and XML` 
 **JavaScript在页面用了，那XML呢？和这个有什么关系？没有XML也是Ajax？**
-狭义理解不算，但现在Ajax的定义主要指不刷新页面异步发送请求，因此没用XML也是Ajax。那不XML用什么？
+
+狭义理解不算.但现在Ajax的定义主要指不刷新页面异步发送请求，因此没用XML也是Ajax。那不XML用什么？
 XML主要来返回数据，而上述返回直接字符串，即文本。而一般常用传递方式有三种，根据不同需求选择不同方式
 
 &nbsp; | 文本 | XML | JSON
