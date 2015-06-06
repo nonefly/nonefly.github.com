@@ -46,7 +46,7 @@ OK，这里的`手机`便可以大胆理解为`XMLHttpRequest`，这个就是页
 `POST`参数通过`send();`传递，而`GET`则在`URL`后以键值对形式传递，多个参数用`&&`分隔。
 **以上是页面使用Ajax步骤，对应一个简单使用如下**
 
-```JavaScript
+{% highlight java %}
 window.onload=function(){AjaxRequest();}//加载页面时调用Ajax，也可以以任意需要的方式，比如输入框按键后onKeyUp,失去焦点等等
     var xmlHttp;
 	//获得xmlHttp对象
@@ -108,7 +108,7 @@ public class DeptsServlet extends HttpServlet {
 		out.close();
 	}
 }
-```
+{% endhighlight %}
 ### **回顾**
 `Asynchronous JavaScript and XML` 
 **JavaScript在页面用了，那XML呢？和这个有什么关系？没有XML也是Ajax？**
