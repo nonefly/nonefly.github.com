@@ -11,9 +11,11 @@ browser_title: 理解Ajax
 ---
 
 #### 关于Ajax
+
 全称（Asynchronous JavaScript and XML/异步的JavaScript和XML），这不是什么新的编程语言或或技术，而是对于多种技术的综合应用。
 
 - ### **要之何用？**
+
     如果用过早期的浏览器就该有过一种‘忧伤’：注册一个账户，姓名年龄昵称密码等等填完了，点击注册，`用户名已存在`，瞬间泪奔。
 
     当然，这只戳中一个泪点。那这与Ajax有什么关系？之前的情况是因为提交信息是整个页面提交， 所以所有信息完整后才会去注册，顺便刷新下页面~。难道就不能写了名字就去查询有没有被用吗？当然可以。Ajax，可以在不用提交整个页面的情况下访问服务器。
@@ -21,11 +23,14 @@ browser_title: 理解Ajax
     可以看出，Ajax作用就是在不影响正在浏览页面的情况下‘独自’去向服务端发送请求、获得数据。
 
 - ### **这是什么？**
+
     那到底Ajax是什么？怎么做到的？那就要推出一个`神奇控件`：手机，额，不对，是`XMLHttpRequest`。
+
     先想想一个场景：自己正在介绍自己个人信息，然后突然忘了父母生日什么的。几十年前我们的做法是`回家问了再来`，现在呢？一边继续填写其他信息一边，打电话或者发短信问下家里，等回短信或电话了再填写刚才漏的。
-OK，这里的`手机`便可以大胆理解为`XMLHttpRequest`，这个就是页面的电话。
+	OK，这里的`手机`便可以大胆理解为`XMLHttpRequest`，这个就是页面的电话。
 
 - ### **怎么使用？**
+
     手机打电话也许简单，`XMLHttpRequest`呢？功能一样，用起来其实也差不多了...
 **1. 首先，获得`XMLHttpRequest`对象**
     打电话当然的有`手机`了，所以先创建`XMLHttpRequest`对象。只是注意的是为了兼容各种浏览器，`XMLHttpRequest`有所不同，老版本IE`XMLHttpRequest`叫做`ActiveX`
@@ -91,9 +96,9 @@ window.onload=function(){AjaxRequest();}//加载页面时调用Ajax，也可以�
 		//具体处理
 		...
 	}
-```
+{% endhighlight %}
   服务端
-```java
+{% highlight java %}
 public class DeptsServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		doPost(request, response);
