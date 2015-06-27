@@ -34,7 +34,7 @@ theme:
   google_analytics_key:
   google_webmaster_key: 
 
-markdown: kramdown
+#markdown: kramdown
 
 # Permalinks
 permalink:        pretty
