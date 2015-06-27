@@ -228,5 +228,5 @@ public class Test {
 测试结果如下：![运行结果][2]
 
 
-  [1]: lianbaio
+  [1]: http://www.nonefly.com/java/data%20structure/2015/05/01/MyLinkedList/
   [2]: {{ site.url }}/assets/images/2015/arraylist.png

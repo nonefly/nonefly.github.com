@@ -1,7 +1,7 @@
 # Site settings
 title: 无羽的博客|nonefly
 tagline: 随风而动－＋－随梦而行
-email: 844059694@qq.com
+email: zy@nonefly.com
 description:
  － Doing Follow the Heart     
  － Going After the Dream
@@ -34,7 +34,7 @@ theme:
   google_analytics_key:
   google_webmaster_key: 
 
-#markdown: kramdown
+markdown: kramdown
 
 # Permalinks
 permalink:        pretty
