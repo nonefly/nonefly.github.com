@@ -6,7 +6,8 @@ description:
  － Doing Follow the Heart     
  － Going After the Dream
 baseurl: ""
-url: "http://www.nonefly.com"
+#url: "http://www.nonefly.com"
+url: "http://127.0.0.1:4000"
 logourl: /assets/images/logo.png # Site logo
 author: "nonefly"
 author_thumbnail: "/assets/images/avatar.jpg" # Author avatar
