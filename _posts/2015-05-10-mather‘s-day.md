@@ -5,7 +5,7 @@ date:   2015-05-10
 categories: 
  - life
 banner_video: '<iframe width="768" height="432" src="http://player.youku.com/embed/XOTUyNTg3NzI0" frameborder="0" allowfullscreen ></iframe>'
-comments: false
+comments: true
 ---
 
 >  - 自己也只能作那所谓的的网络孝子,电话孝子了
