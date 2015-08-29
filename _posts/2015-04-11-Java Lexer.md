@@ -134,7 +134,7 @@ int getType(String args)|利用反射获取种别编码
 ##### 　　此次的实验收获还是很大的，除了上述，因为用java完成对java语言的分析，因此对这门编程语言在回顾熟悉的基础上又有了新的收获。而且尝试用了平时不用的方式，比如定义常量类，通过反射以字符串获取属性值，也许在使用中因不常用有所欠缺，但按所想完成功能感觉还是很好的~   
 
 ##  九、源程序     
-  源代码 [【下载】][7] [【查看】][8]
+  源代码 [【查看】][8]
 
   [1]: {{ site.url }}/assets/images/2015/aaa.png
   [2]: {{ site.url }}/assets/images/2015/ddd1.png
@@ -142,5 +142,4 @@ int getType(String args)|利用反射获取种别编码
   [4]: {{ site.url }}/assets/images/2015/bbb.png
   [5]: {{ site.url }}/assets/images/2015/ccc.png
   [6]: {{ site.url }}/assets/images/2015/eee.png
-  [7]: https://github.com/nonefly/mycode/archive/master.zip
   [8]: https://github.com/nonefly/mycode
