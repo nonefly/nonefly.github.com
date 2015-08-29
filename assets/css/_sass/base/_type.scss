@@ -323,9 +323,10 @@ pre {
   //white-space: pre-wrap;
   word-break: break-all;
   //word-wrap: break-word;
+  overflow-x:hidden;
+  overflow:auto;
   background-color: #f9f9f9;
   border-radius: 3px;
-  overflow:auto;
 }
 pre code {
   padding: 0;
