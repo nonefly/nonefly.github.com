@@ -1,13 +1,13 @@
 ---
 layout: post
-title: java注解（Annotation）简历 原理与实践
+title: java中的注解（Annotation）还是要知道一些滴
 date: 2015-09-02
 meta_description:
 categories:
  - java
  - data structure
 comments: true
-browser_title: 再多java注解（Annotation）简历 原理与实践
+browser_title: java中的注解（Annotation）还是要知道一些滴
 ---
 
 注解的初识在自动生成重写诸如equals()等方法时头顶的那个@Override，还有消除那黄黄的警告线时的@SuppressWarnings，当时只是感觉可有可无的东西，对它就像只是看待一个不知道哪儿定义的一个方法而已。
