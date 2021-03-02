@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>小可爱思文专用版爱心计算器</title>
+
+    <style type="text/css">
+        .divForm {
+            position: absolute; /*绝对定位*/
+            width: 300px;
+            height: 200px;
+
+            border: 0;
+            text-align: center; /*(让div中的内容居中)*/
+            top: 50%;
+            left: 50%;
+            margin-top: -200px;
+            margin-left: -150px;
+        }
+    </style>
+</head>
+
+<body>
+
+<script>
+    function compute() {
+        var input1 = document.getElementById("num1");
+        var input2 = document.getElementById("num2");
+        var answer = document.getElementById("answer");
+        answer.innerHTML = Math.pow(eval(input1.value) * 1.0, eval(input2.value) * 1.0);
+    }
+</script>
+<div class="divForm">
+    <table border="1" style="position:center;">
+
+        <tr>
+            <td colspan="2">
+                <p id="1" style="color: fuchsia">小可爱思文专用版爱心计算器</p>
+            </td>
+        </tr>
+        <tr>
+            <td>第一个数：</td>
+            <td><input type="text" id="num1"/></td>
+        </tr>
+        <tr>
+            <td>指数：</td>
+            <td><input type="text" id="num2"/></td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <button style="width:inherit" onclick="compute()">计算</button>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <p id="answer"></p>
+            </td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>
