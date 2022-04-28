@@ -3,7 +3,7 @@ layout: page
 title: About me
 permalink: /about/
 banner_image: aboutme.jpg
-banner_image_alt: my universe
+
 ---
 
 ### 关于nonefly-无羽

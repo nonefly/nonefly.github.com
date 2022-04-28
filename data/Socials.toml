@@ -1,0 +1,14 @@
+[[socials]]
+    id = "email"
+    url = "mailto:zy@nonefly.com"
+    icon = "envelope"
+    title = "Email"
+    weight = 2
+
+[[socials]]
+    id = "github"
+    url = "https://github.com/nonefly"
+    icon = "github"
+    title = "GitHub"
+    weight = 3
+
