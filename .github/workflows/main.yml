@@ -4,25 +4,32 @@ on:
   push:
     branches:
       - master   # master 更新触发
-
+    paths-ignore: # 下列文件的变更不触发部署，可以自行添加
+      - README.md
+      - LICENSE
 jobs:
-  build-deploy:
-    runs-on: ubuntu-18.04
+  deploy:
+    runs-on: ubuntu-20.04
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v2
+        with:
+          submodules: true  # Fetch Hugo themes (true OR recursive)
+          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: latest
+          hugo-version: 'latest'
+          # extended: true
 
-      - name: Build 
+      - name: Build
         run: hugo
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
-          personal_token: ${{ secrets.personal_token }} # personal_token 这里新建一个 https://github.com/settings/tokens
-          PUBLISH_BRANCH: gh-pages  # 推送到当前 gh-pages 分支
-          PUBLISH_DIR: ./public  # hugo 生成到 public 作为跟目录
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
+          personal_token: ${{ secrets.personal_token }} 
+          PUBLISH_BRANCH: gh-pages
           commit_message: ${{ github.event.head_commit.message }}
