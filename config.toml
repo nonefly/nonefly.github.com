@@ -104,7 +104,7 @@ uglyURLs = false
     # Motto or introduction
     # motto = "Viva La Vida"
     # Avatar
-    avatar = "/icons/apple-touch-icon.png"
+    avatar = "favicon.ico"
     # Personal website, default: baseURL
     # website = "https://www.nonefly.com/"
     # Twitter
@@ -350,7 +350,7 @@ uglyURLs = false
     ######################################
     # Site Info
 
-    siteLogo = "/icons/apple-touch-icon.png"
+    siteLogo = "favicon.ico"
     # Note: used for JSON-LD, Open Graph
 
     siteDescription = "MemE is a powerful and highly customizable GoHugo theme for personal blogs."
